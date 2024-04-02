@@ -16,7 +16,7 @@ I will create a Onepage-type website in which three specific sections will be sh
 ✔ Node.js &nbsp; v20.11.1<br>
 ✔ Gulp <br>
 ✔ NPM &nbsp; v10.2.4<br>
-✔ SASS <br>
+✔ SASS &nbsp; v1.72.0<br>
 
 ### Commands to install json package
 ---
@@ -41,4 +41,29 @@ npm install sass
 ```
 ```bash
 npm install sass --save-dev
+```
+
+### dev Dependencies used in the project
+---
+
+```json
+"devDependencies": {
+    "sass": "^1.72.0"
+}
+```
+
+### Commands to run scripts 
+---
+
+```bash
+npm run sass
+```
+
+### scripts used in the project
+---
+
+```json
+"scripts": {
+    "sass": "sass --watch src/scss:build/css"
+}
 ```
