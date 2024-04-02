@@ -14,7 +14,7 @@ I will create a Onepage-type website in which three specific sections will be sh
 ✔ CSS 3 <br>
 ✔ JavaScript <br>
 ✔ Node.js &nbsp; v20.11.1<br>
-✔ Gulp <br>
+✔ Gulp &nbsp; v5.0.0<br>
 ✔ NPM &nbsp; v10.2.4<br>
 ✔ SASS &nbsp; v1.72.0<br>
 
@@ -33,14 +33,16 @@ npm install
 npm i
 ```
 
-### Commands to install dev dependencies for SASS
+### Commands to install dev dependencies for SASS and Gulp
 ---
 
 ```bash
 npm install sass
+npm install gulp
 ```
 ```bash
 npm install sass --save-dev
+npm install gulp --save-dev
 ```
 
 ### dev Dependencies used in the project
@@ -48,6 +50,7 @@ npm install sass --save-dev
 
 ```json
 "devDependencies": {
+    "gulp": "^5.0.0",
     "sass": "^1.72.0"
 }
 ```
@@ -66,4 +69,11 @@ npm run sass
 "scripts": {
     "sass": "sass --watch src/scss:build/css"
 }
+```
+
+### Commands to run gulpfile.js tasks with npx
+---
+
+```bash
+npx gulp task
 ```
