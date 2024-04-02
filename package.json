@@ -21,6 +21,7 @@
   },
   "homepage": "https://github.com/esdrasWebTech/music-festival-project#readme",
   "devDependencies": {
+    "gulp": "^5.0.0",
     "sass": "^1.72.0"
   }
 }
