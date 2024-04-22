@@ -17,6 +17,7 @@ I will create a Onepage-type website in which three specific sections will be sh
 ✔ Gulp &nbsp; v5.0.0<br>
 ✔ NPM &nbsp; v10.2.4<br>
 ✔ SASS &nbsp; v1.72.0<br>
+✔ gulp-sass (plugin) &nbsp; v5.1.0<br>
 
 ### Commands to install json package
 ---
@@ -51,6 +52,7 @@ npm install gulp --save-dev
 ```json
 "devDependencies": {
     "gulp": "^5.0.0",
+    "gulp-sass": "^5.1.0",
     "sass": "^1.72.0"
 }
 ```
@@ -60,6 +62,7 @@ npm install gulp --save-dev
 
 ```bash
 npm run sass
+npm run css
 ```
 
 ### scripts used in the project
@@ -67,7 +70,8 @@ npm run sass
 
 ```json
 "scripts": {
-    "sass": "sass --watch src/scss:build/css"
+    "sass": "sass --watch src/scss:build/css",
+    "css": "gulp css"
 }
 ```
 
@@ -76,4 +80,19 @@ npm run sass
 
 ```bash
 npx gulp task
+```
+
+### Link to gulp.js
+---
+
+Needed to make the connection between SASS and Gulp in the gulpfile.js<br>
+* In the search bar type _"gulp sass"_
+* Select the plugin called **_gulp-sass_** - "gulp plugin for sass" for installation documentation  
+📌 [https://gulpjs.com/plugins](https://gulpjs.com/plugins)
+
+### Command to install gulp-sass dev dependency
+---
+
+```bash
+npm i --save-dev gulp-sass
 ```
