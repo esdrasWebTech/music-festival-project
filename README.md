@@ -62,7 +62,7 @@ npm install gulp --save-dev
 
 ```bash
 npm run sass
-npm run css
+npm run dev
 ```
 
 ### scripts used in the project
@@ -71,7 +71,7 @@ npm run css
 ```json
 "scripts": {
     "sass": "sass --watch src/scss:build/css",
-    "css": "gulp css"
+    "dev": "gulp dev"
 }
 ```
 

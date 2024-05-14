@@ -2,10 +2,11 @@
   "name": "festivalmusica_inicio",
   "version": "1.0.0",
   "description": "Proyecto con Gulp, SASS y HTML",
+  "type": "module",
   "main": "index.js",
   "scripts": {
     "sass": "sass --watch src/scss:build/css",
-    "css": "gulp css"
+    "dev": "gulp dev"
   },
   "repository": {
     "type": "git",
