@@ -1,15 +1,23 @@
 //import dependencies
-const {src, dest} = require('gulp');
-const sass = require('gulp-sass')(require('sass'));
+import { src, dest, watch } from 'gulp';
+import * as dartSass from 'sass';
+import gulpSass from 'gulp-sass';
+
+//connecting Gulp with SASS
+const sass = gulpSass(dartSass);
 
 // compiling sass
-function css(done){
+export function css(done){
 
     src('./src/scss/app.scss')
         .pipe(sass())
-        .pipe(dest('./build/css/app.css'));
+        .pipe(dest('./build/css'));
 
-    done();    
+    done();
 };
 
-exports.css = css;
+// adding a watch for css function
+export function dev(){
+    watch('./src/scss/app.scss', css);
+};
+
