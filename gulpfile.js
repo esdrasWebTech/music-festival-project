@@ -18,6 +18,6 @@ export function css(done){
 
 // adding a watch for css function
 export function dev(){
-    watch('./src/scss/app.scss', css);
+    watch('./src/scss/**/*.scss', css);
 };
 
