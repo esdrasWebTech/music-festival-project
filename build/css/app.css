@@ -376,17 +376,29 @@ body > section {
 }
 .header h1 {
   color: #FFFFFF;
-  margin: 0;
+  text-align: center;
+}
+@media (min-width: 768px) {
+  .header h1 {
+    margin: 0;
+    text-align: left;
+  }
 }
 .header .contenido-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
   padding: 2rem;
+}
+@media (min-width: 768px) {
+  .header .contenido-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
 }
 
 .navegacion-principal {
   display: flex;
+  flex-direction: column;
+  align-items: center;
   gap: 2rem;
 }
 .navegacion-principal a {
@@ -395,4 +407,9 @@ body > section {
 }
 .navegacion-principal a:hover {
   color: #fdda00;
+}
+@media (min-width: 768px) {
+  .navegacion-principal {
+    flex-direction: row;
+  }
 }
