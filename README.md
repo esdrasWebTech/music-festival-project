@@ -96,3 +96,10 @@ Needed to make the connection between SASS and Gulp in the gulpfile.js<br>
 ```bash
 npm i --save-dev gulp-sass
 ```
+
+### Link to Normalize.css
+---
+
+We will use Normalize.css to make browsers display all elements more consistently
+* Select and copy all CSS code:<br>
+📌[https://necolas.github.io/normalize.css/](https://necolas.github.io/normalize.css/)

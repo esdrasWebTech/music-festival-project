@@ -1,3 +1,2 @@
-body{
-    background-color: black;
-}
+@forward 'base';
+@forward 'layout';
