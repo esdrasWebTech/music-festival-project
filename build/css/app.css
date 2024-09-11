@@ -633,3 +633,16 @@ body > section {
 .pase-footer p:hover {
   background-color: #391749;
 }
+
+.footer {
+  background-color: #F53756;
+}
+.footer .contenedor {
+  padding: 2rem 0;
+  text-align: center;
+}
+.footer .contenedor p {
+  color: #FFFFFF;
+  font-size: 1.7rem;
+  margin: 0;
+}
