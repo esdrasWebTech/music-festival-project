@@ -15,7 +15,7 @@ I will create a Onepage-type website in which three specific sections will be sh
 ✔ JavaScript <br>
 ✔ Node.js &nbsp; v20.11.1<br>
 ✔ Gulp &nbsp; v5.0.0<br>
-✔ NPM &nbsp; v10.2.4<br>
+✔ NPM &nbsp; v10.9.0<br>
 ✔ SASS &nbsp; v1.72.0<br>
 ✔ gulp-sass (plugin) &nbsp; v5.1.0<br>
 
@@ -71,7 +71,7 @@ npm run dev
 ```json
 "scripts": {
     "sass": "sass --watch src/scss:build/css",
-    "dev": "gulp dev"
+    "dev": "gulp"
 }
 ```
 
